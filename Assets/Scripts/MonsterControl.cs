@@ -20,8 +20,8 @@ public class MonsterControl: MonoBehaviour {
 			Vector3 posRecomended;
 			do
 			{
-				posRecomended = new Vector3(Random.Range(100, 180), 0, Random.Range(100, 180));
-			} while ( Vector3.Distance(posRecomended , player.transform.position) < 50f);
+				posRecomended = new Vector3(Random.Range(80, 100), 0, Random.Range(80, 100));
+			} while ( Vector3.Distance(posRecomended , player.transform.position) < 5f);
 			Instantiate(monster, posRecomended, Quaternion.identity);
 			timer = 0;
 		}
